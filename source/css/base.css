@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "LXGW";
-    src: url("../fonts/LXGWWenKaiGBScreen.ttf") format("truetype");
+    src: url("/fontsdest/LXGWWenKaiGBScreen.ttf") format("truetype");
     font-weight: 400;
 }
 
