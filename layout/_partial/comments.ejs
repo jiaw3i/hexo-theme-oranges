@@ -7,13 +7,15 @@
         el: '#waline-comments',
         path: location.pathname,
         serverURL: '<%- theme.comments.waline.serverURL %>',
-        emoji: false,
+        emoji: [
+          '//unpkg.com/@waline/emojis@1.2.0/bmoji','https://unpkg.com/@waline/emojis@1.2.0/alus',
+        ],
         dark: 'auto',
-        requiredMeta: ['nick', 'mail'],
+        requiredMeta: ['nick'],
         wordLimit: 150,
         imageUploader: false,
-        search: false,
-        reaction: false,
+        search: true,
+        reaction: true,
         pageSize: 30
       })
     }
@@ -21,6 +23,14 @@
 
   <% if (theme.cdns && theme.cdns.comments.waline && theme.cdns.comments.waline.enable) { %>
     <link rel="stylesheet" href="<%- theme.cdns.comments.waline.url.css %>">
+    <style>
+      :root {
+        --waline-font-size: 1.5rem;
+      }
+      textarea {
+        font-family: LXGW, Consolas, "Liberation Mono", Menlo, Monaco, "Source Han Sans CN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      }
+    </style>
     <script type="module">
       import { init } from '<%- theme.cdns.comments.waline.url.js %>'
       loadWalineSuc(init)
