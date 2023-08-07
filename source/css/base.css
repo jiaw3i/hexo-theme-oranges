@@ -88,7 +88,7 @@ a:hover {
 }
 
 .flex-container {
-    min-height: calc(100vh - 290px);
+    min-height: calc(100vh - 190px - 13px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
