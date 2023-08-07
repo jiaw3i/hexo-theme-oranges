@@ -9,6 +9,19 @@
     font-weight: 400;
 }
 
+.post-copyright {
+    margin: 3em 0 0;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border-left: 3px solid var(--color-copyright);
+    background-color: #F9F9F9;
+    list-style: none;
+}
+
+.post-copyright li {
+    line-height: 30px;
+}
+
 html, body {
     font-size: 10px;
     letter-spacing: 0.01rem;

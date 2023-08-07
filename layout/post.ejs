@@ -102,6 +102,9 @@
       <div class="markdown-body">
         <%- page.content %>
       </div>
+      <% if (page.copyright) { %>
+        <%- partial('_partial/copyright') %>
+      <% } %>
       <% if(theme.prevnext.enable) { %>
         <div class="prev-or-next">
           <div class="post-foot-next">
