@@ -13,8 +13,9 @@
     margin: 3em 0 0;
     font-size: 1.5em;
     padding: 0.5em 1em;
-    border-left: 3px solid var(--color-copyright);
-    background-color: #F9F9F9;
+    border: 3px solid var(--color-copyright);
+    color: var(--color-text-base);
+    background-color: var(--bg-color-copyright);
     list-style: none;
 }
 
